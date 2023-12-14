@@ -1,0 +1,40 @@
+:root {
+  --background--color: #faf3e0;
+  --font--main-color: #333333;
+  --font--second-color: #faf3e0;
+  --navigation-bg-color: #026258;
+  --border-segment: 3px solid #333333;
+  --font-family: 'Raleway', sans-serif;
+  --font-header-size: 30px;
+  --font-body-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.5;
+  background-color: var(--background--color);
+  color: var(--font--color);
+}
+
+/* Navbar */
+.container {
+}
+
+/* Navigation texts */
+.navbar-brand {
+  font-weight: 700;
+}
+
+/* Profile-Picture */
+
+#profile img {
+  border: 7px solid #026258;
+  width: 30%;
+  height: 30%;
+}
