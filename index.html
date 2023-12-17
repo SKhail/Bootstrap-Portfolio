@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Said - Web Developer</title>
-    <link rel="stylesheet" href="assets/styles.css" />
     <!-- Bootstrap cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -13,110 +12,81 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+        <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="./assets/css/aos.css">
+       <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
     <!-- Bootstrap icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-     <!-- Font type -->
+<!-- Font type -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <!-- Css file -->
+    <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="#">Said Khail</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Portfolio</a>
-              <a class="nav-link" href="#">About-Me</a>
-              <a class="nav-link" href="#">CV</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <!-- End of Navbar -->
-    </header>
-    <main>
-      <section id="profile">
-      <img
-        src="./assets/images/profilepic.JPG"
-        class="img-thumbnail"
-        alt="Profile-Picture"
-      />
-      <div id="aboutMe">
-            <h2>Hello Everyone 🙋🏿‍♂️</h2>
-          </div>
-          <div class="about-container">
-            <article>
-              <p>
-                I'm Said, as you might have gathered from the title, I've
-                traversed various domains within the IT landscape. Amidst the
-                challenging times of the COVID period, I ventured into
-                entrepreneurship, establishing and later divesting my own
-                company within the span of a year. Technology, in its entirety,
-                has long captivated my interest. While my journey encompassed
-                diverse IT realms, software development initially posed a unique
-                challenge, one that intrigued me and continues to do so. Should
-                you seek further insights or have any inquiries, please don't
-                hesitate to reach out. I'm more than willing to share my
-                experiences.
-              </p>
-            </article>
-            <div class="iconLinks">
-              <a href="https://github.com/SKhail" target="_blank" i class="bi bi-github"> </i>
-              <a href="mailto:saidkhail091@gmail.com" <i class="bi bi-envelope-at-fill" > Let's Talk </a></i>
-            </div>
-           
-          </a>
-      </section>
-      
-      <!-- Portfolio layout -->
-      <div class="container-fluid">
-      <div class="row">
-        <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
-          <div class="card" style="width: 100%">
-            <img src="./images/1_card.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="cardContainer col-lg-3 col-md-3 col-sm-12">
-          <div class="card" style="width: 100%">
-            <img src="./images/1_card.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-            </div>
-          </div>
-        </div>
+<!-- Start of Navbar -->
+<nav class="navbar navbar-expand-lg fixed top">
+  <div class="container flex-lg-column">
+    <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
+    <span class="h3 fw-bold text-light d-block d-lg-none">Said Khail</span>
+     <img
+        src="./images/profilepic.JPG"
+        class="d-none d-lg-block rounded-circle"
+        alt="Profile-Picture"/>
+     </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></spa >
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav flex-lg-column text-lg-center ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#aboutMe">About-Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Resume">CV</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="LetsTalk">Let's-Talk</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End of Navbar -->
 
-    </main>
+   <!-- About-Me Profile -->
    
+   <section id="aboutProfile">
+    <div class="container">
+      <div class="row">
+    <h1 class="display-4 fw-bold" >Welcome Everyone! <span class="text-brand">to my website</span></h1>
+    <p class="lead">
+          I'm Said, as you might have gathered from the title, I've
+          traversed various domains within the IT landscape. Amidst the challenging times of the COVID period, I ventured into entrepreneurship, establishing and later divesting my own company within the span of a year. Technology, in its entirety,has long captivated my interest. While my journey encompassed diverse IT realms, software development initially posed a unique challenge, one that intrigued me and continues to do so. Should you seek further insights or have any inquiries, please don't hesitate to reach out. I'm more than willing to share my experiences.
+         <a href="#" class="btn btn-brand">Github</a>
+          <a href="#" class="link-custom">Drop me a digital message</a>
+  </div>
+  </div>
+   </section>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/js/aos.js"></script>
   </body>
 </html>
+
+
+
+

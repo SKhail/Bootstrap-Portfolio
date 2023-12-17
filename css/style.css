@@ -1,40 +1,116 @@
 :root {
-  --background--color: #faf3e0;
-  --font--main-color: #333333;
-  --font--second-color: #faf3e0;
-  --navigation-bg-color: #026258;
-  --border-segment: 3px solid #333333;
+  --background--color: #9a8dfb3b;
+  --font--color-body: #333333;
+  --font--color-: #ffffff;
+  --font--color-hover: #989385;
+  --navigation-bg-color: rgba(37, 41, 88, 0.9); /* Paua Colour Scheme */
+  --btn--brand: #9a8dfb;
+  --btn-brand2: #6d72ff79;
+  --border-segment: 3px solid rgba(37, 41, 88, 0.9);
   --font-family: 'Raleway', sans-serif;
   --font-header-size: 30px;
   --font-body-size: 20px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: var(--font-family);
-  line-height: 1.5;
-  background-color: var(--background--color);
-  color: var(--font--color);
+  background-color: #ffffff;
 }
 
-/* Navbar */
-.container {
-}
-
-/* Navigation texts */
-.navbar-brand {
+/* All header tags */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #9a8dfb7f;
   font-weight: 700;
 }
 
-/* Profile-Picture */
+a {
+  color: var(--font--color-heading);
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
 
-#profile img {
-  border: 7px solid #026258;
-  width: 30%;
-  height: 30%;
+a:hover {
+  color: var(--font--color-hover);
+}
+
+p {
+  color: #0d1001a5;
+}
+
+/* images */
+img {
+  width: 100%;
+}
+
+/* h1 tag in my about me profile */
+.text-brand {
+  color: #9a8dfb;
+}
+
+/* Navbar */
+
+.navbar {
+  background: linear-gradient(rgba(37, 41, 88, 0.7), rgba(37, 41, 88, 0.7)),
+    url(../images/backgroundImage.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar .nav-link {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--font--color-);
+}
+
+.navbar .nav-link:hover {
+  color: var(--font--color-hover);
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: 240px;
+    background: linear-gradient(rgba(37, 41, 88, 0.7), rgba(37, 41, 88, 0.7)),
+      url(../images/backgroundImage.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .navbar-brand img {
+    border: 10px solid #ffffff;
+  }
+
+  /* About me profile */
+  #aboutProfile {
+    padding-left: 240px;
+  }
+
+  .container .row {
+    position: absolute;
+    bottom: 600px;
+  }
+}
+
+/* About-Me Btns */
+
+.btn {
+  padding: 12px 28px;
+  font: 700;
+}
+.btn-brand {
+  border-color: var(--btn--brand);
+  color: var(--font--color-body);
+  background-color: var(--btn--brand);
+}
+
+.btn-brand:hover,
+btn-brand:focus {
+  background-color: var(--btn-brand2);
+  color: var(--font--color-body);
+  border-color: var(--btn--brand);
 }
