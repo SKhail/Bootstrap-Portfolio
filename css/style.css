@@ -2,7 +2,7 @@
   --background--color: #9a8dfb3b;
   --font--color-body: #333333;
   --font--color-: #ffffff;
-  --font--color-hover: #989385;
+  --font--color-hover: #9a8dfbaf;
   --navigation-bg-color: rgba(37, 41, 88, 0.9); /* Paua Colour Scheme */
   --btn--brand: #9a8dfb;
   --btn-brand2: #6d72ff79;
@@ -24,7 +24,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #9a8dfb7f;
+  color: var(--btn-brand2);
   font-weight: 700;
 }
 
@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-  color: var(--font--color-hover);
+  color: var(--btn--brand);
 }
 
 p {
@@ -47,16 +47,10 @@ img {
   width: 100%;
 }
 
-/* h1 tag in my about me profile */
-.text-brand {
-  color: #9a8dfb;
-}
-
 /* Navbar */
-
 .navbar {
-  background: linear-gradient(rgba(37, 41, 88, 0.7), rgba(37, 41, 88, 0.7)),
-    url(../images/backgroundImage.jpg);
+  background: linear-gradient(rgba(37, 41, 88, 0.7), rgba(37, 41, 88, 0.9)),
+    url(../assets/images/backgroundImage.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -68,49 +62,164 @@ img {
 }
 
 .navbar .nav-link:hover {
+  font-size: 1.5rem;
+  color: var(--btn--brand);
+  transition: all 0.4s ease;
+}
+
+.navbar .nav-link:active {
   color: var(--font--color-hover);
 }
 
-@media (min-width: 992px) {
+.navbar .nav-link:hover {
+  color: var(--font--color-hover);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--btn-brand2);
+}
+
+section [class⌃='container'] {
+  padding: 4rem 2rem;
+}
+
+/* About-Me Section */
+section:nth-child(2n) {
+  background-color: #ecf2ff;
+}
+/* Technolgy Stack section */
+section:not(:first-of-type) {
+  text-align: center;
+}
+section .card {
+  border: 2px solid var(--btn-brand2);
+  box-shadow: 4px 4px var(--btn--brand);
+  transition: all 0.4s ease;
+}
+
+section .card .btn-outline-dark:hover {
+  box-shadow: 4px 4px var(--btn-brand2);
+}
+
+/* Navbar Toggle on the smaller screen */
+.navbar-toggler {
+  color: var(--font--color-);
+}
+
+@media screen and (min-width: 1024px) {
   .navbar {
-    min-height: 100vh;
-    width: 240px;
-    background: linear-gradient(rgba(37, 41, 88, 0.7), rgba(37, 41, 88, 0.7)),
-      url(../images/backgroundImage.jpg);
+    background: linear-gradient(rgba(37, 41, 88, 0.7), rgba(37, 41, 88, 0.9)),
+      url(../assets/images/backgroundImage.jpg);
     background-size: cover;
     background-position: center;
   }
 
-  .navbar-brand img {
-    border: 10px solid #ffffff;
-  }
-
-  /* About me profile */
-  #aboutProfile {
-    padding-left: 240px;
-  }
-
-  .container .row {
-    position: absolute;
-    bottom: 600px;
+  .navbar-nav .nav-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--font--color-);
+    padding: 0 1rem;
   }
 }
-
-/* About-Me Btns */
-
-.btn {
-  padding: 12px 28px;
-  font: 700;
-}
-.btn-brand {
-  border-color: var(--btn--brand);
-  color: var(--font--color-body);
-  background-color: var(--btn--brand);
+.navbar {
+  font-size: 1.2rem;
 }
 
-.btn-brand:hover,
-btn-brand:focus {
-  background-color: var(--btn-brand2);
-  color: var(--font--color-body);
-  border-color: var(--btn--brand);
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--btn--brand);
+}
+#hero {
+  background-color: #ffffff;
+  padding-top: 72px;
+}
+
+/* h1 tag in my about me profile */
+.text-brand {
+  color: #9a8dfb;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  font-size: 40px;
+}
+
+.brand-image {
+  border: 10px solid var(--btn-brand2);
+  border-radius: 50%;
+  max-width: 70%;
+}
+
+.openerHeader {
+  font-size: 40px;
+}
+
+section [class⌃='container'] {
+  padding: 4rem;
+}
+
+nav [class⌃='container'] {
+  padding: 0 4em;
+}
+
+/* Technology Stack Section  */
+
+section.stack {
+  font-size: 1.5rem;
+  margin: 3rem auto;
+}
+/* 
+Technology Icons designs  */
+section.stack i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin: 1rem auto 0;
+  border: 2px solid #333333;
+}
+
+section .card {
+  box-shadow: 3px 3px var(--btn-brand2);
+  margin-inline: auto;
+  max-width: 22rem;
+}
+/* Project */
+section.portfolio .card {
+  max-width: 67rem;
+  text-align: left;
+}
+
+section.projects .card img {
+  max-width: 70%;
+  margin: 1rem auto;
+}
+
+/* Contact-Page */
+section.contact-page {
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 576px) {
+  section.hero {
+    text-align: center;
+  }
+  section.hero img {
+    width: 70%;
+  }
+
+  /*  H1 tag - Opener Header  */
+  .openerHeader {
+    font-size: 20px;
+  }
+
+  /* Portfolio header */
+  .text-portfolio {
+    color: #9a8dfb;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+  }
 }
