@@ -2,7 +2,7 @@
 
 ## Description
 
-The task is to combine the knowledge we have learn by adding Bootstrap 5 and custom CSS with the limitation of using Media Queries.
+The objective here is to leverage the capabilities of Bootstrap 5 alongside tailored CSS modifications, all within the framework of imposed constraints centered around the utilization of Media Queries. By incorporating Bootstrap 5, we aim to harness its robust set of pre-designed components and responsive grid system, complementing them with custom CSS adjustments to achieve a tailored aesthetic and functionality. Within this context, Media Queries serve as a pivotal tool for ensuring that our design remains adaptable across various devices and screen sizes, ultimately enhancing the overall user experience.
 
 ## Installation
 
@@ -21,9 +21,7 @@ The task is to combine the knowledge we have learn by adding Bootstrap 5 and cus
 3.  You will have it in your local machines and can start the Application.
 4.  A screenshot location will be provided below to show how the website looks:
 
-    ```md
-    ![alt text] (assets/images/Portfolio-Screenshot.png)
-    ```
+     <img src="assets/images/Screenshot.png" alt="Personal-Website" />
 
 ### External Resources
 
